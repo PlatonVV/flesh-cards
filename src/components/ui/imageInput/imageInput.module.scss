@@ -1,7 +1,30 @@
+.imagePreviewWrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
 .imagePreview {
   width: 100%;
-  margin-bottom: 24px;
   object-fit: cover;
+}
+
+.deleteImage {
+  all: unset;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: (var(--color-dark-300));
+  top: 5px;
+  right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: (var(--color-dark-100));
+  }
 }
 
 .hiddenInput {
